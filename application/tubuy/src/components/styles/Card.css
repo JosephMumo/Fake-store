@@ -1,0 +1,36 @@
+.card-container {
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    text-align: center;
+    padding: auto;
+    font-family: Montserrat;
+    padding-top: 1rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.card-container img {
+    max-width: 150px;
+    height: 150px;
+}
+.rating {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rating img {
+    width: 2rem;
+    height: 2rem;
+}
+.rate {
+    display: flex;
+    align-items: center;
+}
+button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFC000;
+}
