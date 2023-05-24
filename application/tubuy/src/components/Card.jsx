@@ -15,7 +15,7 @@ function Card(props) {
                 <h5>Stock({props.rating.count})</h5>
             </div>
             <h4>${props.price}</h4>
-            <button>Buy Now</button>
+            <button onClick={props.handleCartClick}>Buy Now</button>
         </div>
     )
 }

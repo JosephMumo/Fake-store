@@ -9,6 +9,10 @@
     padding-top: 1rem;
     margin-top: 3rem;
     margin-left: 1rem;
+    cursor: pointer;
+}
+.card-container:hover {
+    box-shadow: none;
 }
 .card-container img {
     max-width: 150px;
