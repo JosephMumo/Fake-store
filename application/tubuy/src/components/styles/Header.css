@@ -17,6 +17,7 @@
 }
 .cart-box {
     padding-right: 2rem;
+    cursor: pointer;
 }
 .cart-box img {
     width: 2rem;

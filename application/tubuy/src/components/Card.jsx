@@ -3,6 +3,7 @@ import './styles/Card.css'
 import star from '../images/star.png'
 
 function Card(props) {
+    
     return(
         <div className='card-container'>
             <img src={props.image} alt='img' />

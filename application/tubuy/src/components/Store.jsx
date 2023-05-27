@@ -5,9 +5,13 @@ import Header from './Header'
 import Cart from './Cart'
 
 
+
 function Store() {
     const [storeData, setStoreData] = React.useState([])
     const [cartCount, setCartCount] = React.useState(0)
+    const [info, setInfo] = React.useState(false)
+    const [show, setShow] = React.useState(true)
+
     
 
     React.useEffect(() => {
@@ -16,8 +20,16 @@ function Store() {
             .then(data => setStoreData(data))
     }, [])
 
+    function flipShow() {
+        setShow( prevShow => !prevShow )
+    }
+
     function handleCartClick() {
-        setCartCount(prevCount => prevCount + 1)
+        setInfo(true)
+        setTimeout(() => {
+            setInfo(false)
+        }, 2000)
+        setCartCount( prevCount => prevCount + 1)
     }
 
 
@@ -31,14 +43,16 @@ function Store() {
         />
     })
 
+
+
     return (
         <>
             <Header
+                flipShow = {flipShow}
                 cartCount = {cartCount}
             />
-            <div className='shopping'>
-                {products}
-            </div>
+            {info && <div className='info'><p>Successfully added to cart</p></div>}
+            {show ? <div className='shopping'>{products}</div> : <Cart />}
         </>
     )
 }

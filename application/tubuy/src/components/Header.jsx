@@ -6,7 +6,7 @@ function Header(props) {
     return (
         <div className='header-container'>
             <h1>TuBuy</h1>
-            <div className='cart-box'>
+            <div className='cart-box' onClick={props.flipShow}>
                 <img src={cart} alt='cart' />
                 <span>{props.cartCount}</span>
             </div>
