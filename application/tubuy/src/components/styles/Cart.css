@@ -2,5 +2,32 @@
     font-family: Montserrat;
     text-align: center;
     color: #FFC000;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
 
+.cart-item {
+    font-family: Montserrat;
+    display: inline;
+    font-size: 1.5rem;
+    color: black;
+    width: 50%;
+    text-align: center;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 1rem;
+    left: 50%;
+    transform: translate(50%);
+
+}
+@media (max-width: 500px) {
+    .cart-item {
+        width: 90%;
+        left: 0%;
+        transform: translate(10%);
+        font-size: 1rem;
+
+    }
 }

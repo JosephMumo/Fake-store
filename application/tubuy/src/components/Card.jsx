@@ -1,22 +1,27 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './styles/Card.css'
 import star from '../images/star.png'
+import { CartContext } from '../context/CartContext'
 
-function Card(props) {
+
+function Card({image, title, rating, price}) {
+
+    const {updateCart}= useContext(CartContext)
+
     
     return(
         <div className='card-container'>
-            <img src={props.image} alt='img' />
-            <p>{props.title}</p>
+            <img src={image} alt='img' />
+            <p>{title}</p>
             <div className='rating'>
                 <div className='rate'>
                     <img src={star} alt='star' />
-                    <h5>{props.rating.rate}</h5>
+                    <h5>{rating.rate}</h5>
                 </div>
-                <h5>Stock({props.rating.count})</h5>
+                <h5>Stock({rating.count})</h5>
             </div>
-            <h4>${props.price}</h4>
-            <button onClick={props.handleCartClick}>Buy Now</button>
+            <h4>${price}</h4>
+            <button onClick={() => updateCart({title, price, image})}>Buy Now</button>
         </div>
     )
 }
