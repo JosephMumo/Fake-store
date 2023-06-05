@@ -15,7 +15,7 @@ function Cart() {
         <div className='cart-box'>
             <h1>Cart</h1>
             {cartItems.map((item) => {
-                return <div key={uuidv4} className='cart-item'>
+                return <div key={uuidv4()} className='cart-item'>
                     <img src={item.image} alt='img' />
                     <p>{item.title}</p>
                     <h6>${item.price}</h6>
