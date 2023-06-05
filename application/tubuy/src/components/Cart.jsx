@@ -7,7 +7,9 @@ import { v4 as uuidv4 } from 'uuid';
 function Cart() {
     const { cartItems } = useContext(CartContext)
 
-    console.log(cartItems)
+    const sum = cartItems.reduce(( accumulator, object ) => {
+        return accumulator + object.price;
+    }, 0)
 
     return (
         <div className='cart-box'>
@@ -19,6 +21,10 @@ function Cart() {
                     <h6>${item.price}</h6>
                 </div>
             })}
+            <div>
+                <h3>Total Price: ${sum} </h3>
+                <button>Proceed to checkout</button>
+            </div>
         </div>
     )
 }
