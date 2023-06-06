@@ -15,8 +15,14 @@ export function CartProvider({children}) {
         }, 2000)
     }
 
+    function removeCartItem({index}) {
+        const newCartItems = [...cartItems]
+        newCartItems.splice(index, 1)
+        setCartItems(newCartItems)
+    }
+
     return (
-        <CartContext.Provider value ={{cartItems, info, updateCart}}>
+        <CartContext.Provider value ={{cartItems, info, updateCart, removeCartItem}}>
             {children}
         </CartContext.Provider>
     )
