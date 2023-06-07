@@ -5,6 +5,7 @@ import Header from './Header'
 import Cart from './Cart'
 import { CartContext } from '../context/CartContext'
 import { useContext } from 'react'
+import Login from './Login'
 
 
 
@@ -21,6 +22,7 @@ function Store() {
     }, [])
 
     const {info} = useContext(CartContext)
+    const { isLogged } = useContext(CartContext)
 
     function flipShow() {
         setShow( prevShow => !prevShow )
@@ -40,11 +42,17 @@ function Store() {
 
     return (
         <>
-            <Header
-                flipShow = {flipShow}
-            />
-            {info && <div className='info'><p>Successfully added to cart</p></div>}
-            {show ? <div className='shopping'>{products}</div> : <Cart />}
+            { isLogged ? 
+                <div>
+                    <Header
+                    flipShow = {flipShow}
+                    />
+                    { info && <div className='info'><p>Successfully added to cart</p></div> }
+                    {show ? <div className='shopping'>{products}</div> : <Cart />}
+                </div>
+            :
+            <Login />
+            }
         </>
     )
 }
