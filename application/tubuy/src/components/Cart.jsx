@@ -24,7 +24,7 @@ function Cart() {
                 </div>
             })}
             <div>
-                <h3>Total Price: ${sum} </h3>
+                <h2>Total Price: ${sum} </h2>
                 <button>Place Order</button>
             </div>
         </div>

@@ -6,6 +6,7 @@ import Cart from './Cart'
 import { CartContext } from '../context/CartContext'
 import { useContext } from 'react'
 import Login from './Login'
+import Landing from './Landing'
 
 
 
@@ -48,7 +49,8 @@ function Store() {
                     flipShow = {flipShow}
                     />
                     { info && <div className='info'><p>Successfully added to cart</p></div> }
-                    {show ? <div className='shopping'>{products}</div> : <Cart />}
+                    {show && <Landing />}
+                    {show ? <div className='shopping'> {products}</div> : <Cart />}
                 </div>
             :
             <Login />
