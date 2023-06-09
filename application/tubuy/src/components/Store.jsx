@@ -8,6 +8,7 @@ import { useContext } from 'react'
 import Login from './Login'
 import Landing from './Landing'
 import Footer from './Footer'
+import Categories from './Categories'
 
 
 
@@ -51,6 +52,7 @@ function Store() {
                     />
                     { info && <div className='info'><p>Successfully added to cart</p></div> }
                     { show && <Landing /> }
+                    { show && <Categories /> }
                     { show ? <div className='shopping'> {products}</div> : <Cart /> }
                     { show && <Footer /> }
                 </div>
