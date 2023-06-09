@@ -12,11 +12,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
     "react-uuid": "^2.0.0",
-=======
     "react-responsive-carousel": "^3.2.23",
->>>>>>> 2c90205d9a41ac951a4774e665456f316ed15567
     "uuid": "^9.0.0"
   },
   "devDependencies": {

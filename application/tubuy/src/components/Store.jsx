@@ -2,12 +2,12 @@ import React from 'react'
 import Card from './Card'
 import './styles/Store.css'
 import Header from './Header'
-import Footer from './Footer'
 import Cart from './Cart'
 import { CartContext } from '../context/CartContext'
 import { useContext } from 'react'
 import Login from './Login'
 import Landing from './Landing'
+import Footer from './Footer'
 
 
 
@@ -44,15 +44,13 @@ function Store() {
 
     return (
         <>
-<<<<<<< HEAD
             <Header
                 flipShow = {flipShow}
             />
             {info && <div className='info'><p>Successfully added to cart</p></div>}
             {show ? <div className='shopping'>{products}</div> : <Cart />}
-            <Footer />
+           
             
-=======
             { isLogged ? 
                 <div>
                     <Header
@@ -61,11 +59,12 @@ function Store() {
                     { info && <div className='info'><p>Successfully added to cart</p></div> }
                     {show && <Landing />}
                     {show ? <div className='shopping'> {products}</div> : <Cart />}
+                    <Footer />
+
                 </div>
             :
             <Login />
             }
->>>>>>> 2c90205d9a41ac951a4774e665456f316ed15567
         </>
     )
 }
