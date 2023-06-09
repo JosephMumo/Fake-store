@@ -14,12 +14,12 @@ function Footer() {
         </ul>
       </div>
       <div className="footer-column">
-        <h4>Products</h4>
+        <h4>Categories</h4>
         <ul>
-          <li>Category 1</li>
-          <li>Category 2</li>
-          <li>Category 3</li>
-          <li>Category 4</li>
+          <li>Electronics</li>
+          <li>Jewelery</li>
+          <li>Mens Clothing</li>
+          <li>Women Clothing</li>
         </ul>
       </div>
       <div className="footer-column">
