@@ -59,7 +59,7 @@ function Store() {
                     { info && <div className='info'><p>Successfully added to cart</p></div> }
                     {show && <Landing />}
                     {show ? <div className='shopping'> {products}</div> : <Cart />}
-                    {show &&<Footer /> }
+                    <Footer />
 
                 </div>
             :
