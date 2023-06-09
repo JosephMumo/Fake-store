@@ -44,26 +44,18 @@ function Store() {
 
     return (
         <>
-            <Header
-                flipShow = {flipShow}
-            />
-            {info && <div className='info'><p>Successfully added to cart</p></div>}
-            {show ? <div className='shopping'>{products}</div> : <Cart />}
-           
-            
             { isLogged ? 
                 <div>
                     <Header
                     flipShow = {flipShow}
                     />
                     { info && <div className='info'><p>Successfully added to cart</p></div> }
-                    {show && <Landing />}
-                    {show ? <div className='shopping'> {products}</div> : <Cart />}
-                    <Footer />
-
+                    { show && <Landing /> }
+                    { show ? <div className='shopping'> {products}</div> : <Cart /> }
+                    { show && <Footer /> }
                 </div>
-            :
-            <Login />
+            : 
+                <Login />
             }
         </>
     )
