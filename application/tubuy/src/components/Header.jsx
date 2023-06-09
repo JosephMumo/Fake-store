@@ -8,7 +8,7 @@ function Header(props) {
 
     return (
         <div className='header-container'>
-            <h1>TuBuy</h1>
+            <a href='#' id='homePage'>TuBuy</a>
             <div className='cart-box' onClick={props.flipShow}>
                 <img src={cart} alt='cart' />
                 <span>{cartItems.length}</span>
