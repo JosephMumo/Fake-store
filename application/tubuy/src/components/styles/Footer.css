@@ -8,6 +8,8 @@
   
   .footer-column {
     flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
   }
   
   ul {
@@ -61,11 +63,15 @@
     background-clip: text;
     
   }
+ 
 
   form input {
     padding: 5px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     margin-bottom: 10px;
+    font-family: Monteserrat;
+   
   }
   
   form button {
@@ -80,3 +86,45 @@
     background-color: #555;
   }
   
+  @media (max-width: 768px) {
+    .footer {
+        font-size: 60%;
+        padding: 5px;
+    }
+    .footer-column {
+      flex-basis: 50%;
+    }
+    .fa {
+        padding: 5px;
+        font-size: 8px;
+        width: 8px;
+       
+       
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+        font-size: 50%;
+        padding: 5px;
+    }
+    .footer-column {
+      flex-basis: 100%;
+    }
+  
+    form input {
+      max-width: none;
+    }
+    .fa {
+        padding: 5px;
+        font-size: 8px;
+        width: 8px;
+       
+    }
+  }
+  
+  
+  
+  
+  
+   

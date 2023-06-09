@@ -12,6 +12,9 @@
 @media (max-width: 925px) {
     .main {
         flex-direction: column;
+         
+
+
     }
     .main .img-box {
         padding: 0;
