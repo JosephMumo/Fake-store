@@ -4,7 +4,7 @@ import star from '../images/star.png'
 import { CartContext } from '../context/CartContext'
 
 
-function Card({image, title, rating, price}) {
+export default function Card({image, title, rating, price}) {
 
     const {updateCart}= useContext(CartContext)
 
@@ -25,4 +25,3 @@ function Card({image, title, rating, price}) {
         </div>
     )
 }
-export default Card;

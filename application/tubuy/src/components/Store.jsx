@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card'
 import './styles/Store.css'
 import Header from './Header'
+import Footer from './Footer'
 import Cart from './Cart'
 import { CartContext } from '../context/CartContext'
 import { useContext } from 'react'
@@ -45,6 +46,8 @@ function Store() {
             />
             {info && <div className='info'><p>Successfully added to cart</p></div>}
             {show ? <div className='shopping'>{products}</div> : <Cart />}
+            <Footer />
+            
         </>
     )
 }
