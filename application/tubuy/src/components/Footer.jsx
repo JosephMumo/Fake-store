@@ -26,16 +26,16 @@ export default function Footer(){
         <h4>Follow Us</h4>
         <ul className="social-media-links">
           <li>
-            <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.facebook.com" className="fa fa-facebook"></a>
+        </li>
+          <li>
+            <a href="https://www.twitter.com" className="fa fa-twitter"></a>
           </li>
           <li>
-            <a href="https://www.twitter.com">Twitter</a>
+            <a href="https://www.instagram.com" className='fa fa-instagram'></a>
           </li>
           <li>
-            <a href="https://www.instagram.com">Instagram</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://www.linkedin.com" className='fa fa-linkedin'></a>
           </li>
         </ul>
       </div>
