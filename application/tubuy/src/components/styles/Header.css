@@ -13,8 +13,11 @@
     position: sticky;
 
 }
-.header-container h1 {
+.header-container a {
     margin-right: auto;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
 .cart-box {
     padding-right: 2rem;
