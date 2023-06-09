@@ -21,7 +21,7 @@ export default function Card({image, title, rating, price}) {
                 <h5>Stock({rating.count})</h5>
             </div>
             <h4>${price}</h4>
-            <button onClick={() => updateCart({title, price, image})}>Buy Now</button>
+            <button onClick={() => updateCart({title, price, image})}>Add To Cart</button>
         </div>
     )
 }

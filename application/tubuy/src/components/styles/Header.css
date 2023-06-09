@@ -10,6 +10,7 @@
     margin: 0;
     font-family: Montserrat;
     top: 0;
+    position: sticky;
 
 }
 .header-container h1 {

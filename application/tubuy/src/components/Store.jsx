@@ -6,6 +6,8 @@ import Footer from './Footer'
 import Cart from './Cart'
 import { CartContext } from '../context/CartContext'
 import { useContext } from 'react'
+import Login from './Login'
+import Landing from './Landing'
 
 
 
@@ -22,6 +24,7 @@ function Store() {
     }, [])
 
     const {info} = useContext(CartContext)
+    const { isLogged } = useContext(CartContext)
 
     function flipShow() {
         setShow( prevShow => !prevShow )
@@ -41,6 +44,7 @@ function Store() {
 
     return (
         <>
+<<<<<<< HEAD
             <Header
                 flipShow = {flipShow}
             />
@@ -48,6 +52,20 @@ function Store() {
             {show ? <div className='shopping'>{products}</div> : <Cart />}
             <Footer />
             
+=======
+            { isLogged ? 
+                <div>
+                    <Header
+                    flipShow = {flipShow}
+                    />
+                    { info && <div className='info'><p>Successfully added to cart</p></div> }
+                    {show && <Landing />}
+                    {show ? <div className='shopping'> {products}</div> : <Cart />}
+                </div>
+            :
+            <Login />
+            }
+>>>>>>> 2c90205d9a41ac951a4774e665456f316ed15567
         </>
     )
 }
