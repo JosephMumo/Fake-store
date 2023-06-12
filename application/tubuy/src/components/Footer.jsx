@@ -46,6 +46,8 @@ function Footer() {
           <button type="submit">Subscribe</button>
         </form>
       </div>
+    
+     
     </footer>
   );
 }
