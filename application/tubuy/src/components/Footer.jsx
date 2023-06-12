@@ -1,7 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/Footer.css'
+import { useContext } from 'react';
+import '../context/CartContext'
+import { CartContext } from '../context/CartContext';
 
 function Footer() {
+
+  const { subscription, setSubscription } = useContext(CartContext)
+  const [ subData, setSubData ] = useState('')
+
+  function handleChange(event) {
+    const { name, value } = event.target
+    setSubData((prevData) => {
+      return { ...prevData,
+        [name] : value
+      }
+    })
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    setSubscription((prevData) => {
+      return [...prevData, subData]
+    })
+  }
+
   return (
     <footer className="footer">
       <div className="footer-column">
@@ -41,8 +64,8 @@ function Footer() {
       </div>
       <div className="footer-column">
         <h4>Subscribe</h4>
-        <form>
-          <input type="email" placeholder="Enter your email" />
+        <form onSubmit={handleSubmit}> 
+          <input type="email" placeholder="Enter your email" name='email' onChange={handleChange} />
           <button type="submit">Subscribe</button>
         </form>
       </div>

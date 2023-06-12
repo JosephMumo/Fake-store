@@ -67,11 +67,14 @@
 
   form input {
     padding: 5px;
-    width: 100%;
+    width: 80%;
     max-width: 200px;
     margin-bottom: 10px;
     font-family: Monteserrat;
-   
+    background-color: white;
+    border-radius: 6px;
+    margin-right: 1rem;
+    border: none;
   }
   
   form button {
@@ -80,6 +83,7 @@
     color: #fff;
     border: none;
     cursor: pointer;
+    max-width: 80%;
   }
   
   form button:hover {

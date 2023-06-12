@@ -11,6 +11,7 @@ export function CartProvider({children}) {
         password: 'Admin123'
     })
     const [isLogged, setIsLogged] = useState(false)
+    const [subscription, setSubscription] = useState([])
 
     function updateCart({title ,price, image}) {
         setCartItems((prevCart) => [...prevCart, {title, price, image}])
@@ -27,7 +28,7 @@ export function CartProvider({children}) {
     }
 
     return (
-        <CartContext.Provider value ={{cartItems, info, loginData, isLogged, setIsLogged, updateCart, removeCartItem}}>
+        <CartContext.Provider value ={{cartItems, info, loginData, isLogged, subscription, setSubscription, setIsLogged, updateCart, removeCartItem}}>
             {children}
         </CartContext.Provider>
     )
