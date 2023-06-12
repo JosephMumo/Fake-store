@@ -32,3 +32,10 @@
 
     }
 }
+.payments {
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

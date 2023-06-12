@@ -37,8 +37,8 @@ function Login() {
             <h1>Welcome to Tubuy</h1>
             <form onSubmit={handleSubmit}>
                 <h2>Login to Proceed</h2>
-                <input type='text' id='username' name='username' placeholder='username' onChange={handleChange}></input>
-                <input type='password' id='password' name='password' placeholder='password' onChange={handleChange}></input>
+                <input type='text' id='username' name='username' placeholder='username' onChange={handleChange} required></input>
+                <input type='password' id='password' name='password' placeholder='password' onChange={handleChange} required></input>
                 <button>Login</button>
                 <p>Username : Admin</p>
                 <p>Password : Admin123</p>
