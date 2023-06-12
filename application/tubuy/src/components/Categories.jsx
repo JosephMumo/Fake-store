@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import './styles/Categories.css'
 
+
 function Categories() {
     const responsive = {
         superLargeDesktop: {
