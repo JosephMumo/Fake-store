@@ -28,10 +28,26 @@ function Categories() {
         <div className="cat--box">
             <h2>Hot Offers</h2>
             <Carousel responsive={responsive}>
-                <div>Item 1</div>
-                <div>Item 2</div>
-                <div>Item 3</div>
-                <div>Item 4</div>
+                <div>
+                  <h5>Save upto</h5>
+                  <h1>50% OFF!!</h1>
+                  <p>Black Friday</p>
+                </div>
+                <div>
+                  <h5>Weekend Sale</h5>
+                  <h1>70% OFF!!</h1>
+                  <p>Men/ Women</p>
+                </div>
+                <div>
+                  <h5>Flash Sale</h5>
+                  <h1>20% OFF!!</h1>
+                  <p>Electronic Devices</p>
+                </div>
+                <div>
+                  <h5>Clearance Sale</h5>
+                  <h1>2 for 1</h1>
+                  <p>Jewelery</p>
+                </div>
             </Carousel>;
         </div>
     )
