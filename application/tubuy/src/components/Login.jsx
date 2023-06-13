@@ -18,7 +18,6 @@ function Login() {
             [name] : value
         }
         })
-        console.log(userInfo)
     }
 
     function handleSubmit(event) {
@@ -28,7 +27,6 @@ function Login() {
         } else{
             setIsLogged(false)
         }
-        console.log(isLogged)
         
     }
 
