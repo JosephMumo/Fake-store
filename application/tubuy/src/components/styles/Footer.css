@@ -84,6 +84,7 @@
     border: none;
     cursor: pointer;
     max-width: 80%;
+    max-height: 30px;
   }
   
   form button:hover {

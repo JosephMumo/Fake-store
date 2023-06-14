@@ -35,7 +35,7 @@ function Cart() {
                                 purchase_units: [
                                     {
                                         amount: {
-                                            value: '100.00',
+                                            value: '109.95',
                                         },
                                     },
                                 ],

@@ -26,11 +26,11 @@ function Categories() {
       };
     return(
         <div className="cat--box">
-            <h2>Hot Offers</h2>
+            <h1>Hot Offers</h1>
             <Carousel responsive={responsive}>
                 <div>
                   <h5>Save upto</h5>
-                  <h1>50% OFF!!</h1>
+                  <h2>50% OFF!!</h2>
                   <p>Black Friday</p>
                 </div>
                 <div>

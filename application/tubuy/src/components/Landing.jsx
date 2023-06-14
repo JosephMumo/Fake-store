@@ -1,14 +1,12 @@
 import React from 'react'
 import './styles/Landing.css'
+import logo from '../images/pic-1.png'
 
 function Landing() {
     return(
         <div className="main">
-            <div className="txt-box">
-                <h1><span>Tubuy</span> Online Store</h1>
-                <br />
-                <h2>"Experience retail therapy like never before in our virtual aisles."</h2>
-            </div>
+            <img src={logo} alt='1' />
+            <p>"Discover a World of Unforgettable Shopping Experiences"</p>
         </div>
     )
 }
