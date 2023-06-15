@@ -1,2 +1,2 @@
 # Fake-store
-an ecommerce site utilizing the fakestore api
+Tubuy is a react Ecommerce site that utilizes Fakestore Api to fetch the product catalogue and display it on the user interface. 

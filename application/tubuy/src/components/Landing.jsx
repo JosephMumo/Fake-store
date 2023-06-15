@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../images/lans.jpg'
 import './styles/Landing.css'
+import logo from '../images/pic-1.png'
 
 function Landing() {
     return(
@@ -15,6 +15,8 @@ function Landing() {
             <div className="img-box">
                 <img src={logo} alt='1' />
             </div>
+            <img src={logo} alt='1' />
+            <p><q>Discover a World of Unforgettable Shopping Experiences</q></p>
         </div>
     )
 }
