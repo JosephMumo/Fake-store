@@ -14,9 +14,10 @@ function Landing() {
             </div>
             <div className="img-box">
                 <img src={logo} alt='1' />
+                <p><q>Discover a World of Unforgettable Shopping Experiences</q></p>
             </div>
-            <img src={logo} alt='1' />
-            <p><q>Discover a World of Unforgettable Shopping Experiences</q></p>
+           
+            
         </div>
     )
 }
