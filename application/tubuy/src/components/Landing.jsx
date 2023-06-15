@@ -8,7 +8,7 @@ function Landing() {
             <div className="text-box">
                 <h2><span>Tubuy</span> Online Shop</h2>
                 <h5>Upto 50% Off on Selected Items!</h5>
-                <p>"Elevate Your Shopping Experience: Explore Limitless Choices"</p>
+                <p><q>Elevate Your Shopping Experience: Explore Limitless Choices</q></p>
                 <br />
                 <button>Explore</button>
             </div>
