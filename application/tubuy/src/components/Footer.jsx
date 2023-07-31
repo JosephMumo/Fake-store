@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles/Footer.css'
 import { useContext } from 'react';
-import '../context/CartContext'
+import '../context/CartContext';
 import { CartContext } from '../context/CartContext';
 
 function Footer() {
